@@ -9,18 +9,18 @@ export default function HomePage() {
     <main className="bg-[#1B2316] overflow-x-hidden min-h-screen text-white font-sans">
       <div className="relative">
         
-       
+        {/* Hero Background Elements - Made fully clear and visible */}
         <div 
-          className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-35 mix-blend-lighten pointer-events-none"
+          className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-80 pointer-events-none"
           style={{ backgroundImage: "url('/images/main.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1B2316]/40 to-[#1B2316] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1B2316]/20 to-[#1B2316] pointer-events-none" />
 
-       
+        {/* Hero Section */}
         <section className="relative min-h-screen pt-20 pb-40 px-6 md:px-12 flex items-center justify-center">
           <div className="relative max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
             
-            
+            {/* Left Column content */}
             <div className="lg:col-span-7 flex flex-col items-start gap-8">
               <div className="flex flex-col">
                 <h1 className="font-sans font-semibold text-[56px] md:text-[96px] tracking-tight leading-[1.05] text-white">
@@ -31,7 +31,7 @@ export default function HomePage() {
                 </p>
               </div>
               
-              
+              {/* CTAs */}
               <div className="flex items-center gap-6 mt-2">
                 <button className="border border-white hover:border-[#a3e635] hover:bg-[#a3e635]/10 text-white font-medium px-8 py-3 rounded-lg transition-all cursor-pointer text-[15px] tracking-wide bg-transparent">
                   Buy Now
@@ -45,7 +45,7 @@ export default function HomePage() {
               </div>
             
               {/* Testimonial Widget */}
-              <div className="bg-white/5 backdrop-blur-md rounded-[24px] p-6 max-w-[380px] mt-12 border border-white/10 shadow-2xl relative overflow-hidden">
+              <div className=" backdrop-blur-md rounded-[24px] p-6 max-w-[380px] mt-12 border border-white/10 shadow-2xl relative overflow-hidden">
                 <div className="flex items-center gap-4">
                   <img 
                     src="/images/image.png" 
@@ -78,7 +78,7 @@ export default function HomePage() {
 
             {/* Right Column Plant Card Display */}
             <div className="lg:col-span-5 flex justify-center lg:justify-end items-center">
-              <div className="bg-white/[0.04] backdrop-blur-xl rounded-[90px_75px_45px_45px] p-8 pb-10 w-full max-w-[440px] h-[640px] border border-white/[0.12] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] relative flex flex-col justify-between overflow-visible">
+              <div className="backdrop-blur-xl rounded-[90px_75px_45px_45px] p-8 pb-10 w-full max-w-[440px] h-[640px] border border-white/[0.12] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] relative flex flex-col justify-between overflow-visible">
                 
                 <div className="relative w-full flex items-center justify-center -mt-20 overflow-visible">
                   <img 
@@ -122,10 +122,10 @@ export default function HomePage() {
         </section>
 
         {/* --- TRENDY PLANTS SECTION --- */}
-        <section className="relative py-20 px-6 md:px-12 flex flex-col items-center z-10 bg-[#171E13]/50">
+        <section className="relative py-20 px-6 md:px-12 flex flex-col items-center z-10">
           <div className="max-w-7xl w-full mx-auto">
             
-           
+            {/* Title Grid */}
             <div className="flex justify-center mb-32">
               <div className="relative inline-block">
                 <span className="absolute -left-8 top-1/2 -translate-y-1/2 text-[#a3e635] text-4xl font-light opacity-60">[</span>
@@ -140,7 +140,7 @@ export default function HomePage() {
             <div className="flex flex-col gap-28 w-full">
               
               {/* Plant Deck Card Row 1 */}
-              <div className="bg-white/5 backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pl-0 border border-white/10 shadow-2xl relative">
+              <div className=" backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pl-0 border shadow-2xl relative">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-5 flex justify-center relative lg:static">
                     <div className="relative w-64 h-64 md:w-80 md:h-80 lg:absolute lg:left-8 lg:-top-16 lg:bottom-8 lg:w-[420px] lg:h-[400px] flex items-center justify-center pointer-events-none">
@@ -164,7 +164,7 @@ export default function HomePage() {
               </div>
 
               {/* Plant Deck Card Row 2 */}
-              <div className="bg-white/5 backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pr-0 border border-white/10 shadow-2xl relative">
+              <div className=" backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pr-0 border border-white/10 shadow-2xl relative">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-7 flex flex-col items-start gap-5 order-2 lg:order-1 lg:pr-8">
                     <h3 className="text-white text-2xl md:text-4xl font-normal tracking-wide">For Your Desks Decorations</h3>
