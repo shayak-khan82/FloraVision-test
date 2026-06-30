@@ -1,13 +1,16 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+
 export default function Footer() {
   return (
-    <footer className="bg-[#040d06] border-t border-white/10 text-gray-300 py-20 px-6 relative overflow-hidden">
+    /* Changed master footer background color here to #1B2316 */
+    <footer className="bg-[#1B2316] border-t border-white/10 text-gray-300 py-20 px-6 relative overflow-hidden">
       
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-neon-lime/5 blur-[120px] pointer-events-none" />
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
         
-        
+        {/* Left Column: Brand & Social Info */}
         <div className="md:col-span-5 flex flex-col gap-6">
           <div className="flex items-center gap-3 cursor-pointer group">
             <Image src="/images/headerimage.png" alt="alt" width={60} height={10} />
@@ -38,6 +41,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
         {/* Center Column: Quick Links */}
         <div className="md:col-span-3 flex flex-col gap-6">
           <h4 className="font-display font-medium text-white text-base tracking-wide">
@@ -58,6 +62,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
         {/* Right Column: Newsletter Subscription */}
         <div className="md:col-span-4 flex flex-col gap-6">
           <h4 className="font-display font-medium text-white text-base tracking-wide">
@@ -77,6 +82,7 @@ export default function Footer() {
         </div>
       </div>
       
+      {/* Subfooter Copyright Row */}
       <div className="max-w-7xl mx-auto border-t border-white/10 mt-16 pt-8 text-center text-xs text-gray-500 font-light relative z-10">
         FloraVision &copy; all right reserve
       </div>

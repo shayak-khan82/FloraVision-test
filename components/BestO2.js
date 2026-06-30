@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -28,21 +27,23 @@ export default function BestO2() {
   const currentSlide = O2_PAGES[activeIndex];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-[#09140a] min-h-screen flex flex-col items-center justify-center font-sans select-none">
+    /* Changed master wrapper background color here to #1B2316 */
+    <section className="py-20 px-6 md:px-12 bg-[#1B2316] min-h-screen flex flex-col items-center justify-center font-sans select-none">
       <div className="max-w-5xl w-full flex flex-col items-center gap-10">
         
-       
+        {/* Section Header */}
         <div className="relative px-6 py-2 border-t-2 border-b-2 border-l border-r border-transparent before:absolute before:inset-y-0 before:left-0 before:w-3 before:border-t-2 before:border-b-2 before:border-l-2 before:border-green-500/60 after:absolute after:inset-y-0 after:right-0 after:w-3 after:border-t-2 after:border-b-2 after:border-r-2 after:border-green-500/60 rounded-sm">
           <h3 className="text-white text-xl md:text-2xl font-semibold tracking-wide px-2">
             Our Best o2
           </h3>
         </div>
 
-     
-        <div className="w-full bg-[#111e13]/60 backdrop-blur-md rounded-[45px] border border-white/5 p-8 md:p-12 lg:p-16 shadow-2xl">
+        {/* Content Card Container */}
+        {/* Adjusted background mesh to bg-[#24301f]/60 for rich glassmorphism contrast */}
+        <div className="w-full bg-[#24301f]/60 backdrop-blur-md rounded-[45px] border border-white/5 p-8 md:p-12 lg:p-16 shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             
-            
+            {/* Left Column: Image Asset Showcase */}
             <div className="lg:col-span-5 flex justify-center items-center">
               <div className="relative w-full max-w-[340px] aspect-square flex items-center justify-center">
                 <img 
@@ -53,7 +54,7 @@ export default function BestO2() {
               </div>
             </div>
 
-            
+            {/* Right Column: Slide Text Details & Navigation Actions */}
             <div className="lg:col-span-7 flex flex-col justify-between h-full py-2">
               <div>
                 <h2 className="text-white text-2xl md:text-3xl font-medium leading-snug tracking-wide mb-6">
@@ -66,13 +67,13 @@ export default function BestO2() {
                 </div>
               </div>
 
-              
+              {/* Action Buttons Footer Row */}
               <div className="flex items-center justify-between mt-10 lg:mt-14 w-full">
                 <button className="bg-transparent hover:bg-white/5 text-gray-300 hover:text-white border border-gray-600 hover:border-gray-400 px-8 py-2.5 rounded-md transition-all duration-300 text-sm font-medium tracking-wide">
                   Explore
                 </button>
 
-               
+                {/* Slider Controls */}
                 <div className="flex items-center gap-4">
                   <button 
                     onClick={prevSlide}

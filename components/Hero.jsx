@@ -5,7 +5,8 @@ import { Play, Star, ChevronRight, ShoppingBag } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    <main className="bg-[#040d06] overflow-x-hidden">
+    /* Changed main background color to #1B2316 */
+    <main className="bg-[#1B2316] overflow-x-hidden">
       
       <div className="relative">
        
@@ -14,7 +15,8 @@ export default function HomePage() {
           style={{ backgroundImage: "url('/images/main.jpg')" }}
         />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#040d06]/40 to-[#040d06] pointer-events-none" />
+        {/* Updated gradient transitions to match the new #1B2316 background color */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1B2316]/40 to-[#1B2316] pointer-events-none" />
 
         
         <section className="relative min-h-screen pt-20 pb-40 px-6 md:px-12 flex items-center justify-center overflow-hidden">
@@ -55,7 +57,7 @@ export default function HomePage() {
                       {[...Array(4)].map((_, i) => (
                         <Star key={i} className="w-3.5 h-3.5 fill-current" />
                       ))}
-                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" xmlns="[w3.org](http://www.w3.org/2000/svg)">
+                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                           <linearGradient id="half-star">
                             <stop offset="50%" stopColor="#eab308"/>
@@ -121,7 +123,7 @@ export default function HomePage() {
               </div>
             </div>
             
-            {/* Cards (Keeping your original inner structure) */}
+            {/* Cards */}
             <div className="flex flex-col gap-24 w-full">
               
               <div className="bg-white/5 backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pl-0 border border-white/10 shadow-2xl relative">
@@ -142,7 +144,6 @@ export default function HomePage() {
               </div>
 
               <div className="bg-white/5 backdrop-blur-md rounded-[40px] p-8 md:p-12 md:pr-0 border border-white/10 shadow-2xl relative">
-                {/* Product Card 2 content */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-7 flex flex-col items-start gap-6 order-2 lg:order-1 lg:pr-8">
                     <h3 className="text-white text-2xl md:text-4xl">For Your Desks Decorations</h3>

@@ -31,9 +31,11 @@ const REVIEWS = [
 function StarRating() {
   return (
     <div className="flex items-center gap-1 text-[#eab308]">
+      {/* Renders 4 full stars */}
       {[...Array(4)].map((_, i) => (
         <Star key={i} className="w-3.5 h-3.5 fill-current stroke-current" />
       ))}
+      {/* Renders the 0.5 half-filled star asset */}
       <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="half-star">
@@ -49,14 +51,15 @@ function StarRating() {
 
 export default function Reviews() {
   return (
-    <section className="py-24 px-6 md:px-12 bg-[#0d160f] flex flex-col items-center justify-center min-h-screen">
+    /* Changed master background wrapper color here to #1B2316 */
+    <section className="py-24 px-6 md:px-12 bg-[#1B2316] flex flex-col items-center justify-center min-h-screen">
       <div className="max-w-7xl w-full mx-auto flex flex-col items-center">
         
         {/* Section Header with Bracket Styling */}
         <div className="mb-20 flex justify-center">
           <div className="relative inline-block">
-            <span className="absolute -left-6 top-1/2 -translate-y-1/2 text-[#a2c1a4] text-3xl font-light opacity-70">[</span>
-            <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-[#a2c1a4] text-3xl font-light opacity-70">]</span>
+            <span className="absolute -left-6 top-1/2 -translate-y-1/2 text-[#a3e635] text-3xl font-light opacity-60">[</span>
+            <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-[#a3e635] text-3xl font-light opacity-60">]</span>
             <h2 className="font-display font-medium text-2xl md:text-3xl tracking-wide text-white px-4">
               Customer Review
             </h2>
@@ -68,7 +71,8 @@ export default function Reviews() {
           {REVIEWS.map((review) => (
             <div 
               key={review.id} 
-              className="bg-[#19221a]/60 backdrop-blur-xl p-8 md:p-10 border border-white/[0.06] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] relative flex flex-col gap-6 transition-all duration-300 hover:border-white/[0.12]
+              /* Lightened card panels up to a complimentary green-tint tint (#24301f/60) to contrast safely against the deep backdrop */
+              className="bg-[#24301f]/60 backdrop-blur-xl p-8 md:p-10 border border-white/[0.06] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] relative flex flex-col gap-6 transition-all duration-300 hover:border-white/[0.12]
                 rounded-[50px_35px_45px_30px] custom-fluid-shape"
               style={{ minHeight: '340px' }}
             >
