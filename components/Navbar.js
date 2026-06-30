@@ -47,7 +47,7 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-2"
           >
-            <Image src="/images/headerimage.png" alt="alt" width={60} height={10} />
+            <Image src="/images/headerimage.png" alt="alt" width={45} height={8} />
 
             <h1 className="text-2xl font-bold">
               FloraVision.
