@@ -51,7 +51,7 @@ function StarRating() {
 
 export default function Reviews() {
   return (
-    /* Changed master background wrapper color here to #1B2316 */
+    
     <section className="py-24 px-6 md:px-12 bg-[#1B2316] flex flex-col items-center justify-center min-h-screen">
       <div className="max-w-7xl w-full mx-auto flex flex-col items-center">
         

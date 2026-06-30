@@ -57,7 +57,7 @@ export default function TopSelling() {
   const [currentPage, setCurrentPage] = useState(0);
   
   return (
-    /* Changed master wrapper background color here to #1B2316 */
+    
     <section className="pt-30 pb-30 px-6 md:px-12 bg-[#1B2316] flex flex-col items-center justify-center">
       <div className="max-w-7xl w-full mx-auto flex flex-col items-center">
         

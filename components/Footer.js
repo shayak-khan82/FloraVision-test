@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    /* Changed master footer background color here to #1B2316 */
+    
     <footer className="bg-[#1B2316] border-t border-white/10 text-gray-300 py-20 px-6 relative overflow-hidden">
       
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-neon-lime/5 blur-[120px] pointer-events-none" />

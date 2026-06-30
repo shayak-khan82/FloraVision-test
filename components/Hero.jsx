@@ -5,7 +5,8 @@ import { Play, Star, ChevronRight, ShoppingBag } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    /* Changed main background color to #1B2316 */
+    
+    
     <main className="bg-[#1B2316] overflow-x-hidden">
       
       <div className="relative">

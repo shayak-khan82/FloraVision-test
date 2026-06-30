@@ -27,7 +27,7 @@ export default function BestO2() {
   const currentSlide = O2_PAGES[activeIndex];
 
   return (
-    /* Changed master wrapper background color here to #1B2316 */
+    
     <section className="py-20 px-6 md:px-12 bg-[#1B2316] min-h-screen flex flex-col items-center justify-center font-sans select-none">
       <div className="max-w-5xl w-full flex flex-col items-center gap-10">
         
